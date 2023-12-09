@@ -1,1 +1,3 @@
-# This project consists of the multi-functional aspect of Table Element
+# Tabula 
+1. This project contains the semantic use of Table element.
+2. Discovers the various arrangements using rowspan and colspan.
