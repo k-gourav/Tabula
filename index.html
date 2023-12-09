@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>    
+    <style>
+        table{border: 1px solid black; border-collapse: collapse;}
+        th{border: 1px solid black;}
+        td{border: 1px solid black;}
+        #one,#hi{border-collapse: collapse;}
+        .separate{border-collapse: collapse; border-spacing: 1;}
+        *{font-size: 1.1rem;}
+    </style>
+</head>
+<body>
+    <table>
+        <thead style="border: 1px solid black;">
+            <tr>
+                <th>Style Stage</th>
+                <th>A modern CSS showcase styled by community contributions</th>
+                <th>Maintained by <a href="https://twitter.com/5t3ph">Stephanie Eckles</a> of <a href="https://moderncss.dev/">ModernCSS.dev</a></th>   
+                <th colspan="3"><a href="https://github.com/5t3ph/stylestage">Star on Github</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="/assets/logo.png">About</a></td>
+                <td><a href="/assets/logo.png">Guidelines</a></td>
+                <td><a href="/HTML-2/index.html">Contribute</a></td>
+                <td><a href="/assets/logo.png">Files</a></td>
+                <td><a href="/contact.html">All Styles</a></td>
+                <td colspan="3"><a href="/HTML-1/index.html">Resources</a></td>
+            </tr>
+            <tr>
+                <td colspan="6"><strong>Setting the Stage</strong></td>
+            </tr>
+            <tr>
+                <td>In 2003, Dave Shea began a legendary project called CSS Zen Garden that provided a demonstration of "what can be accomplished through CSS-based design" until submissions stopped in 2013.</td>
+                <td>Style Stage seeks to rekindle that spirit by providing this page as the base HTML for contributors - like you! - to re-style by submitting an alternate stylesheet.</td>
+                <td>How it works: Visit the "All Styles" directory page and select a style to view. A page with identical content to this one will be presented with a new design provided from a contributed stylesheet. CSS practitioners of any skill level are invited to submit a stylesheet!</td>
+                <td colspan="3">The HTML for this page was created to be semantic, accessible, and free of nearly all other opinions. Nested sectioning elements with the class `.container` serve as additional style aids since you do not have access to alter the base HTML. IDs are included where needed for nav anchors or accessibility, and a small number of additional classes are provided for key elements without IDs. Don't forget the `.skip-link`!</td>
+            </tr>
+            <tr>
+                <td colspan="6"><strong>Modern CSS Under the Spotlight</strong></td>
+            </tr>
+            <tr>
+                <td>Modern CSS has increased and improved the available CSS properties and layout behaviors, and browser support is nearly in sync for most high-touch features.</td>
+                <td>Some examples of modern CSS include:</td>
+                <td>
+                    <table class="separate">
+                        <tr>
+                            <td>Flexbox</td>
+                            <td>Grid</td>
+                            <td>custom variables</td>
+                            <td>@supports()</td>
+                        </tr>
+                        <tr>
+                            <td>gradients</td>
+                            <td>animation</td>
+                            <td>3D transforms</td>
+                            <td>object-fit</td>
+                        </tr>
+                        <tr>
+                            <td>:focus-within</td>
+                            <td>calc()</td>
+                            <td>min() / max() / clamp()</td>
+                        </tr>
+                        <tr>
+                            <td>viewport units</td>
+                            <td>scroll-(margin/padding/snap)</td>
+                        </tr>
+                        <tr>
+                            <td>position: sticky</td>
+                            <td>two-value display</td>
+                        </tr>
+                        <tr>
+                            <td>expanded media query values</td>
+                            <td>variable fonts</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>We also collectively have an improved understanding of what it takes to make accessible experiences.</td>
+                <td colspan="2"><a href="https://stylestage.dev/styles/barebones/#contribute">Join Style Stage as a contributor</a> to refresh your CSS skills, and learn from others!</td>
+            </tr>
+            <tr>
+                <td colspan="6"><strong>Guidelines</strong></td>
+            </tr>
+            <tr>
+                <td colspan="6">Contributing a stylesheet to Style Stage means you agree to abide by <a href="https://stylestage.dev/guidelines/">our full guidelines.</a></td>
+            </tr>
+            <tr>
+                <td colspan="6"><strong>TL;DR</strong></td>
+            </tr>
+            <tr>
+                <td colspan="2">All submissions will be autoprefixed and prepended with the <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA license</a> as well as attribution using the metadata you provide. You may use any build setup you prefer, but the final submission should be the compiled, unminified CSS. You retain the copyright to original graphics and must ensure all graphics used are appropriately licensed. All asset links, including fonts, must be absolute to external resources. Stylesheets will be saved into the Github repo, and detected changes that violate the guidelines are cause for removal.</td>
+                <td colspan="2">Ensure your design is responsive, and that it passes accessible contrast (we'll be using aXe to verify). Animations should be removed via `prefers-reduced-motion`. Cutting-edge techniques should come with a fallback if needed to not severely impact the user experience. No content may be permanently hidden, and hidden items must come with an accessible viewing technique. Page load time should not exceed 3 seconds.</td>
+                <td colspan="2">Most importantly - have fun and learn something new! Check out the <a href="https://stylestage.dev/resources/">resources</a> for tips and inspiration.</td>
+            </tr>
+            <tr>
+                <td colspan="6"><strong>Contribute</strong></td>
+            </tr>
+            <tr>
+                <td>All who enjoy the craft of writing CSS are welcome to contribute!</td>
+                <td colspan="5">By participating as a contributor, your work will be shared with your provided attribution as long as Style Stage is online, your stylesheet link and any asset links remain valid, and all <a href="index.html">contributor guidelines</a> are adhered to.</td>
+            </tr>
+            <tr>
+                <td>Steps to Contribute</td>
+                <td>Download the source files listed below to use as a reference to build your stylesheet, or start from the <a href="https://github.com/5t3ph/stylestage-sass">Sass template.</a></td>
+                <td>Host your completed stylesheet at a public URL, and ensure all asset links are absolute URLs to external resources.</td>
+                <td><a href="https://github.com/5t3ph/stylestage">Create a pull request</a> to add your information as a unique .json file to: src/_data/styles. The schema is detailed in the repo README, and you can review the FAQ on <a href="https://github.com/5t3ph/stylestage">creating a pull request.</a></td>
+                <td colspan="2">If your contribution abides by the previously listed guidelines, your submission will be added!</td>
+            </tr>
+            <tr>
+                <td>Source Files</td>
+                <td><a href="https://stylestage.dev/source-files/stylestage">Download CSS</a></td>
+                <td><a href="https://stylestage.dev/source-files/stylestage">Download HTML</a></td>
+                <td colspan="3"><a href="https://codepen.io/5t3ph/pen/PoZQyoa">Fork the pen</a></td>
+            </tr>
+            <tr>
+                <td colspan="6"><strong>Currently Staged Style</strong></td>
+            </tr>
+            <tr>
+                <td>Title: Barebones</td>
+                <td>Author: Vinícius Philot</td>
+                <td>Twitter: <a href="https://twitter.com/vphilot">vphilot</a></td>
+                <td>Website: <a href="https://www.philot.ca/">philot.ca</a></td>
+                <td colspan="2"><a href="https://stylestage.dev/styles/css/barebones.css">View Stylesheet</a></td>
+            </tr>
+            <tr>
+                <td colspan="6"><strong>Featured Styles</strong></td>
+            </tr>
+            <tr>
+                <td><a href="index.html">Moccasin Stage</a>
+                    <p>by Gabriel Paixao</p></td>
+                <td><a href="index.html">Color Stages</a> 
+                    <p>by Claire Lipskey</p></td>
+                <td><a href="index.html">Artsy Blue and Turquoise </a>
+                    <p>by Thea Kitzinger</p></td>
+                <td colspan="3"> </td>
+            </tr>
+            <tr>
+                <td colspan="6"><a href="https://stylestage.dev/styles/"><strong>View All Styles</strong></a></td>
+            </tr>
+            <tr>
+                <td colspan="2"><strong>Created and maintained by </strong>
+                    <p><a href="https://twitter.com/5t3ph">Stephanie Eckles (@5t3ph)</a></p></td>
+                <td>
+                    <table id="one">
+                        <thead>
+                        <tr>
+                            <td><a href="index.html">Contact on Twitter</a></td>
+                            <td><a href="index.html">Star on Github</a></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td colspan="2">Crafted with semantic, accessible HTML and CSS, Style Stage is generated with 11ty and hosted on Netlify. This project uses PostCSS with autoprefixer.</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td colspan="3">
+                    <table id="hi">
+                        <tr>
+                            <td colspan="1"><a href="index.html">RSS Feed</a></td>
+                            <td colspan="1"><a href="index.html">Subscribe to Updates</a></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Contributors retain copyright of all graphics used, and styles are available under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA</a></td>
+                        </tr>
+                    </table>
+                </td>
+                
+                
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
